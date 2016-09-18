@@ -1,0 +1,526 @@
+* { margin: 0; padding: 0; }
+
+html {
+  font-family: 'andadaregular';
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  overflow-x: hidden;
+  font-family: 'andadaregular';
+}
+
+/*home-section*/
+.navbar-default.navbar-toby.navbar-toby-white {
+	background: transparent;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 15px 0 0;
+}
+
+.navbar-nav.navbar-navone{
+    position: relative;
+    top: 45px;
+}
+
+.navbar-default.navbar-toby.navbar-toby-white li a:focus,
+.navbar-default.navbar-toby.navbar-toby-white li a:active,
+.navbar-default.navbar-toby.navbar-toby-white li a:hover,
+.navbar-default.navbar-toby.navbar-toby-white li a {
+    color: #fff;
+    font-family: andadaregular;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.navbar-default.navbar-toby.navbar-toby-white li.active a {
+    border-bottom: 2px solid#fff;
+    background: transparent;
+    color: #fff;
+}
+
+.logo-homex {
+    background: url('../img/logo-putih.png');
+    width: 199px;
+    height: 92px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-right: 50px
+}
+
+.container-homes{
+	width: 100%;
+	height: 815px;
+	background-size: cover;
+	background-image: url('../img/bg-home.jpg');
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.container-center {
+    width: 723px;
+    text-align: center;
+    margin: auto;
+}
+
+.container-homes h1 {
+    text-align: center;
+    font-family: andadabold;
+    color: #fff;
+    padding: 0px 150px;
+    font-size: 70px;
+    line-height: 85px;
+    margin: 0;
+    position: relative;
+    top: 130px;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+}
+
+.btn.btn-homes {
+    text-align: center;
+    position: relative;
+    top: 180px;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 0;
+    padding: 10px 30px;
+}
+.btn.btn-homes:hover {
+	background: #4c4c4c;
+}
+
+/*ABOUT*/
+.container-about{
+	width: 100%;
+	height: 815px;
+	background: #fcfcfc;
+}
+
+.container-about2{
+	height: 710px
+}
+
+.logo-homex-black {
+    background: url('../img/logo-hitam.png');
+    width: 199px;
+    height: 92px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+}
+
+.navbar-default.navbar-toby.navbar-toby-black {
+	background: transparent;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 15px 0 0;
+}
+
+
+.navbar-default.navbar-toby.navbar-toby-black li a:focus,
+.navbar-default.navbar-toby.navbar-toby-black li a:active,
+.navbar-default.navbar-toby.navbar-toby-black li a:hover,
+.navbar-default.navbar-toby.navbar-toby-black li a {
+    color: #000;
+    font-family: andadaregular;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.navbar-default.navbar-toby.navbar-toby-black li.active a {
+    border-bottom: 2px solid#000;
+    background: transparent;
+    color: #000;
+}
+
+.col-mdabout-left {
+    margin-top: 60px;
+    padding: 0
+}
+
+.col-mdabout-left h1{
+    text-align: center;
+    font-family: andadabold;
+    color: #000;
+    padding: 0px;
+    font-size: 30px;
+    line-height: 85px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.col-mdabout-left span {
+    width: 140px;
+    height: 4px;
+    background: #000;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.col-mdabout-left h4 {
+    color: #4c4c4c;
+    text-align: center;
+    font-family: andadabold;
+    margin: 70px 0 25px;
+}
+
+.col-mdabout-left p{
+    color: #4c4c4c;
+    text-align: center;
+    font-family: andadaregular;
+    margin: 0;
+    padding: 0 41px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.col-mdabout-right {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.col-mdabout-right img {
+    width: 420px;
+    height: 228px;
+    margin-bottom: 8px;
+}
+
+
+/*GALLERY*/
+.container-gallery {
+    width: 100%;
+    height: 815px;
+    background: #2f2f2f;
+    text-align: center;
+    margin: auto;
+}
+
+.col-md-gallery {
+    width: 1120px;
+    overflow: hidden;
+}
+
+.col-md-gallery h1 {
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: andadabold;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin: 50px 0 15px;
+}
+
+.img-gallery {
+    margin: 3px;
+}
+
+.img-gallery1 {
+    width: 294px;
+    height: 219px;
+}
+
+.img-gallery2 {
+ 	width: 316px;
+    height: 219px;
+}
+
+.img-gallery3 {
+ 	width: 146px;
+    height: 219px;
+}
+
+.img-gallery4 {
+ 	width: 328px;
+    height: 219px;
+}
+
+.img-gallery5 {
+ 	width: 374px;
+    height: 219px;
+}
+
+.img-gallery6 {
+ 	width: 386px;
+    height: 219px;
+}
+
+.img-gallery7 {
+ 	width: 328px;
+    height: 219px;
+}
+
+.btn-gallery{
+	background: url('../img/button-showmore.png');
+    width: 170px;
+    height: 57px;
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+}
+
+
+/*MENU*/
+.col-mdmenu {
+    margin-top: 30px;
+}
+
+.col-mdmenu ul{
+	width: 100%;
+	float: left;
+	height: 421px;
+}
+
+.col-mdmenu ul h4 {
+    color: #4c4c4c;
+    font-family: andadabold;
+    font-size: 22px;
+    margin: 10px 0 25px;
+}
+
+.col-mdmenu ul li{
+	list-style: none;
+    color: #4c4c4c;
+    font-family: andadaregular;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.col-mdmenu ul li.m-italic{
+	font-family: 'andadaitalic';
+    font-size: 16px;
+}
+
+
+/*FIND*/
+.container-find{
+	width: 100%;
+    height: 815px;
+    background-size: cover;
+    background-image: url('../img/bg-findus.png');
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.container-find h1 {
+    text-align: center;
+    font-family: andadabold;
+    color: #fff;
+    padding: 0px 150px;
+    font-size: 70px;
+    line-height: 85px;
+    margin: 0;
+    position: relative;
+    top: 130px;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    background: #2f2f2f;
+    padding: 20px 0;
+}
+
+.img-footer {
+    background: url('../img/logo-putih.png');
+    width: 199px;
+    height: 92px;
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0 auto 25px;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-family: andadabold;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.logo-homex-mobile{
+	background: url('../img/logo-putih.png');
+	width: 70px;
+	height: 35px;
+	display: block;
+	background-repeat: no-repeat;
+	margin: 10px 0 10px 10px;
+	background-size: 100%;
+}
+
+.navbar-fixed-top.navbar-fixed-top-toby{
+	display: none;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 767px){
+
+	.body-mobile{
+		padding-top: 55px;
+	}
+
+	.container-homes {
+		height: auto;
+		padding: 10px 10px 25px;
+	}
+
+	.container-about2 {
+	     height: auto;
+	     padding: 0 0 25px;
+	}
+
+	.container-homes h1 {
+	    padding: 0px;
+	    font-size: 30px;
+	    line-height: normal;
+	    position: static;
+	    margin-top: 55px;
+	}
+
+	.col-mdabout-left h1 {
+    	font-size: 22px;
+    	line-height: normal;
+    }
+
+    .col-md-gallery h1 {
+    	text-align: center;
+    }
+
+    .col-md-gallery {
+	    width: auto;
+      margin-top: 30px;
+	}
+
+	.container-gallery {
+	    height: auto;
+	    padding: 0 0 25px;
+	}
+
+	.col-mdabout-right img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	.img-gallery1,
+	.img-gallery2,
+	.img-gallery3,
+	.img-gallery4,
+	.img-gallery5,
+	.img-gallery6,
+	.img-gallery7{
+		width: 100%;
+		height: 100%;
+	}
+
+	.container-center {
+	    width: 230px;
+	}
+
+  .col-mdmenu {
+      margin-top: 74px;
+  }
+
+	.col-mdmenu ul {
+	    height: auto;
+	}
+
+	.col-mdabout-left p{
+		padding: 0;
+		font-size: 15px;
+	}
+
+	.navbar-toggle-desktop{
+		display: none;
+	}
+
+	.container-find{
+		height: auto;
+		padding: 0 0 25px;
+	}
+
+	.container-find h1{
+	    margin-top: 20px;
+	        padding: 0px;
+	    font-size: 30px;
+	    line-height: normal;
+	    position: static;
+	    margin-top: 55px;
+	}
+
+	.logo-homex{
+		margin: 0;
+	}
+
+	.logo-homex-black{
+		margin: 0;
+	}
+
+	.navbar-toby{
+		display: none;
+	}
+
+	.navbar-fixed-top.navbar-fixed-top-toby{
+		display: block;
+		background: #2f2f2f;
+	}
+
+	.col-mdabout-left h4 {
+	    margin: 30px 0 25px;
+	    font-size: 15px;
+	}
+
+	.btn.btn-homes {
+		position: static;
+		margin-top: 15px;
+	}
+
+	.container-homes,
+	.container-find {
+	    height: 270px;
+	}
+
+	.col-mdmenu ul h4 {
+    	font-size: 18px;
+    }
+
+    .col-mdmenu ul li {
+	    font-size: 15px;
+	    padding: 3px 0;
+	}
+
+}
+
+@media (max-width: 640px){
+
+
+	.container-homes h1 {
+   		 font-size: 25px;
+   	}
+
+   	.col-mdabout-left h1 {
+	    font-size: 15px;
+	    padding: 10px 0;
+
+	}
+
+   	.col-mdabout-left {
+	    margin-top: 80px;
+	}
+
+}
