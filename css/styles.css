@@ -327,8 +327,8 @@ body {
 
 .boxed {
   border: 3px solid white ;
-  width: 435px;
-  margin-left: 340px;
+  width: 500px;
+  margin-left: 310px;
 }
 
 .container-find h1 {
@@ -342,6 +342,7 @@ body {
     position: relative;
     text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
     text-transform: uppercase;
+    letter-spacing: 6px;
 }
 
 .container-find h3 {
@@ -503,7 +504,7 @@ footer p {
 
 	.container-find{
 		height: auto;
-		padding: 0 0 25px;
+		padding: 140px 0 25px;
 	}
 
 	.container-find h1{
@@ -542,8 +543,7 @@ footer p {
 		margin-top: 15px;
 	}
 
-	.container-homes,
-	.container-find {
+	.container-homes {
 	    height: 270px;
 	}
 
@@ -556,21 +556,64 @@ footer p {
     padding: 3px 0;
   }
 
-  .boxed{
-    display: none;
+  .container-find{
+    height: 480px;
   }
 
-  .container-find h3, h4{
-    display: none;
+  .boxed {
+    border: 3px solid white ;
+    width: 100%;
+    margin: 0px;
+    padding-top: 15px;
+  }
+
+  .container-find h1 {
+      text-align: center;
+      font-family: andadabold;
+      color: #fff;
+      font-size: 38px;
+      margin: 0;
+      position: relative;
+      text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+      text-transform: uppercase;
+  }
+
+  .container-find h3 {
+    text-align: center;
+    font-family: helveticaneue;
+    color: #fff;
+    padding: 0px 0px;
+    font-size: 20px;
+    line-height: 85px;
+    margin: 0;
+    position: relative;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .container-find h4 {
+    text-align: center;
+    font-family: helveticaneue;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    position: relative;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
 
   .container-find-address{
-    display: none;
+    text-align: center;
+    padding: 0px 0px;
+    margin: 0;
+    position: relative;
   }
 
 }
 
-@media (max-width: 640px){
+/*@media (max-width: 640px){
 
 
 	.container-homes h1 {
@@ -587,4 +630,4 @@ footer p {
 	    margin-top: 80px;
 	}
 
-}
+}*/
