@@ -43,3 +43,18 @@
   font-style: normal;
 
 }
+
+
+@font-face {
+  font-family: 'avenir-black';
+  src: url('Avenir-Black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenir-light';
+  src: url('avenir-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
