@@ -45,9 +45,8 @@
                 <li><a class="page-scroll" href="#home">Home</a></li>
                 <li><a class="page-scroll" href="#about">About</a></li>
                 <li><a class="page-scroll" href="#gallery">Gallery</a></li>
-                <!-- <li><a class="page-scroll" href="#menu">Menu</a></li> -->
                 <li><a class="page-scroll" href="#findus">Location</a></li>
-                <li><a class="page-scroll" href="#">Career</a></li>
+                <li><a class="page-scroll" href="{{ route('career') }}">Career</a></li>
                 <li><a class="" href="mailto:tobysestate@normi.co.id">Contact Us</a></li>
             </ul>
         </div>
@@ -75,9 +74,8 @@
               <li class="active"><a class="page-scroll" href="#home">Home</a></li>
               <li><a class="page-scroll" href="#about">About</a></li>
               <li><a class="page-scroll" href="#gallery">Gallery</a></li>
-              <!-- <li><a class="page-scroll" href="#menu">Menu</a></li> -->
               <li><a class="page-scroll" href="#findus">Location</a></li>
-              <li><a class="page-scroll" href="#">Career</a></li>
+              <li><a class="page-scroll" href="{{ route('career') }}">Career</a></li>
               <li><a class="" href="mailto:tobysestate@normi.co.id">Contact Us</a></li>
               </ul>
           </div>

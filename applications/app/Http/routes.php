@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'WelcomePageController@index')->name('index');
+Route::get('/career', 'WelcomePageController@career')->name('career');
