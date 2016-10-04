@@ -92,7 +92,7 @@
 
         <div class="container">
           <div id="youtubecontainer">
-            <!-- <iframe width="945" height="590" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe> -->
+            <iframe width="945" height="590" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe>
           </div>
 
           <h1>Welcome to Our World of Specialty Coffee</h1>
@@ -139,12 +139,12 @@
 
       <div class="cold-md-12 col-md-gallery">
 
-      <h1>gallery</h1>
+      <h1></h1>
 			<div class="img-gallery">
-				<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/f17490d07e0650b2b41115c2a99c98ad.html" id="lightwidget_f17490d07e" name="lightwidget_f17490d07e"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+				<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/f17490d07e0650b2b41115c2a99c98ad.html" id="lightwidget_f17490d07e" name="lightwidget_f17490d07e"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 			</div>
 
-      <a href="https://www.instagram.com/tobysestateid/" target="_blank" class="btn-gallery"></a>
+      <a href="https://www.instagram.com/tobysestateid/" target="_blank" class="btn btn-gallery">Show More</a>
       </div>
       </div>
     </div>
@@ -166,7 +166,7 @@
           <div class="col-md-5 input-subscribe">
             <input class="form-control" name="name" placeholder="Name" value="" type="text">
           </div>
-          <div class="col-md-5 input-subscribe">
+          <div class="col-md-5 input-subscribe1">
             <input class="form-control" name="email" value="" placeholder="Email" type="email">
           </div>
           <div class="col-md-2">

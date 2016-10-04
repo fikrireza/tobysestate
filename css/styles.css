@@ -283,49 +283,21 @@ width:100%;
     margin: 3px;
 }
 
-
-.btn-gallery{
-	background: url('../img/button-showmore.png');
-    width: 170px;
-    height: 57px;
-	font-family: avenir-light;
-    display: block;
+.btn.btn-gallery {
     text-align: center;
-    margin: 25px auto;
-}
-
-
-/*MENU*/
-.col-mdmenu {
-    margin-top: 140px;
-}
-
-.col-mdmenu ul{
-	width: 100%;
-	float: left;
-	height: 421px;
-}
-
-.col-mdmenu ul h4 {
-    color: #4c4c4c;
-    font-family: avenir-black;
-    font-size: 22px;
-    margin: 10px 0 25px;
-}
-
-.col-mdmenu ul li{
-	list-style: none;
-    color: #4c4c4c;
+    top: 80px;
+    margin: auto;
+    color: #fff;
     font-family: avenir-light;
-    font-size: 20px;
-    width: 100%;
-    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 0;
+    padding: 4px 15px;
+    margin-top: 40px;
 }
-
-.col-mdmenu ul li.m-italic{
-	font-family: avenir-light;
-	font-style: italic;
-    font-size: 16px;
+.btn.btn-gallery:hover {
+	background: #4c4c4c;
 }
 
 
@@ -540,6 +512,10 @@ footer p {
 
   .input-subscribe {
     padding-bottom: 5px;
+  }
+
+  .input-subscribe1 {
+    padding-bottom: 15px;
   }
 
   .btn.btn-subscribe {
