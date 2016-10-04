@@ -94,12 +94,12 @@
         <div class="col-md-12 col-md-career">
           <img src="{{ asset('img/logo-career.png') }}" class="logo-career" />
           <ul class="square">
-            <li>Brand, Marketing, and Promotion Manager</li>
-            <li>Executive Chef</li>
-            <li>Operational Manager</li>
-            <li>Sales and Distribution Manager</li>
-            <li>Restaurant/Cafe/Outlet Manager</li>
-            <li>Graphic Designer and Social Media Manager</li>
+            <li>Brand, Marketing, and Promotion Manager <a href="" class="btn btn-apply">Submit</a></li>
+            <li>Executive Chef <a href="" class="btn btn-apply">Submit</a></li>
+            <li>Operational Manager <a href="" class="btn btn-apply">Submit</a></li>
+            <li>Sales and Distribution Manager <a href="" class="btn btn-apply">Submit</a></li>
+            <li>Restaurant/Cafe/Outlet Manager <a href="" class="btn btn-apply">Submit</a></li>
+            <li>Graphic Designer and Social Media Manager <a href="" class="btn btn-apply">Submit</a></li>
           </ul>
         </div>
       </div>
