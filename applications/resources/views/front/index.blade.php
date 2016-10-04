@@ -160,7 +160,8 @@
         </div>
 
         <div class="row">
-          <form action="" method="POST" class="form-horizontal">
+          <form action="{{ route('index') }}" method="POST" class="form-horizontal">
+            {{ csrf_field() }}
           <div class="col-md-5 input-subscribe">
             <input class="form-control" name="name" placeholder="Name" value="" type="text">
           </div>
