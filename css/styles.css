@@ -455,7 +455,7 @@ footer p {
 .form-control:-ms-input-placeholder { color: grey;  font-family: avenir-light;}
 
 /*RESPONSIVE*/
-@media (max-width: 767px){
+@media (max-width: 800px){
 
 	.body-mobile{
 		padding-top: 55px;
@@ -762,6 +762,12 @@ footer p {
   }
   .btn.btn-subscribe:hover {
   	background: rgba(255, 255, 255, 0.33);
+  }
+
+  .container-about{
+  	width: 100%;
+  	height: auto;
+    background: url('../img/bg-texture.jpg');
   }
 
   .col-mdabout-right {
