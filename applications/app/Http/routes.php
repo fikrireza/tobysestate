@@ -13,3 +13,5 @@
 
 Route::get('/', 'WelcomePageController@index')->name('index');
 Route::get('/career', 'WelcomePageController@career')->name('career');
+
+Route::post('/subscribe', 'WelcomePageController@subscribePost')->name('subscribe.Post');

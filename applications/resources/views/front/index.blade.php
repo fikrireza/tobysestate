@@ -14,7 +14,9 @@
     <link href="./fonts/fonts.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
 
-
+    @if(Session::has('message'))
+    <script>alert('{{ Session::get('message')}}');</script>
+    @endif
     <!-- Custom CSS -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,7 +92,7 @@
 
         <div class="container">
           <div id="youtubecontainer">
-            <iframe width="945" height="590" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe>
+            {{-- <iframe width="945" height="590" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe> --}}
           </div>
 
           <h1>Welcome to Our World of Specialty Coffee</h1>
@@ -160,13 +162,23 @@
         </div>
 
         <div class="row">
-          <form action="{{ route('index') }}" method="POST" class="form-horizontal">
+          <form action="{{ route('subscribe.Post') }}" method="POST" class="form-horizontal">
             {{ csrf_field() }}
-          <div class="col-md-5 input-subscribe">
-            <input class="form-control" name="name" placeholder="Name" value="" type="text">
+          <div class="col-md-5 input-subscribe {{ $errors->has('name') ? 'has-error' : '' }}">
+            <input class="form-control" name="name" placeholder="Name" value="{{ old('name') }}" type="text">
+            @if($errors->has('name'))
+              <span class="help-block">
+                <i>* {{$errors->first('name')}}</i>
+              </span>
+            @endif
           </div>
-          <div class="col-md-5 input-subscribe1">
-            <input class="form-control" name="email" value="" placeholder="Email" type="email">
+          <div class="col-md-5 input-subscribe1 {{ $errors->has('email') ? 'has-error' : '' }}">
+            <input class="form-control" name="email" value="{{ old('email') }}" placeholder="Email" type="email">
+            @if($errors->has('email'))
+              <span class="help-block">
+                <i>* {{$errors->first('email')}}</i>
+              </span>
+            @endif
           </div>
           <div class="col-md-2">
             <button type="submit" class="btn btn-subscribe">Submit</button>
@@ -219,20 +231,11 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery.easing.min.js"></script>
     <script src="./js/scrolling-nav.js"></script>
-    <!-- <script>
-      function ResizeClip(){
-        if($(window).width()<800){
-        	$("#youtubecontainer").css("display","none");
-        	$("#youtubecontainer iframe").attr("src","")
-        }else{
-        	$("#youtubecontainer").css("display","block");
-        	$("#youtubecontainer").css("top","-" + $(window).width() / 4 + "px");
-        	$("#youtubecontainer").css("height",$(window).width() + "px");
-        	$("#youtubecontainer iframe").css("height",$(window).width() + "px")
-        	$("#youtubecontainer iframe").attr("src","https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U")
-        }
-      }
-    </script> -->
+    <script type="text/javascript">
+    @if (count($errors) > 0)
+      $('#subscribe').section('show');
+    @endif
+    </script>
 
 </body>
 
