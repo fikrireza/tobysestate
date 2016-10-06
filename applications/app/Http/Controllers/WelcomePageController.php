@@ -44,7 +44,20 @@ class WelcomePageController extends Controller
       $post->flag_used = 1;
       $post->save();
 
+      $email = $request->email;
+
+      if($email != null)
+      {
+        Mail::send('emails.subscribe', [], function($message) use($email) {
+          $message->to($email)->to('tobysestate@normi.co.id')->subject('Thank You For Signing Up To Our Newsletter');
+        });
+      }
+
       return redirect()->route('index')->with('message', 'Thank You');
+    }
+
+    public function email(){
+      return view('emails.subscribe');
     }
 
 }
