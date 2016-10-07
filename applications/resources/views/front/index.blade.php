@@ -17,6 +17,7 @@
     @if(Session::has('message'))
     <script>alert('{{ Session::get('message')}}');</script>
     @endif
+
     <!-- Custom CSS -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -92,7 +93,7 @@
 
         <div class="container">
           <div id="youtubecontainer">
-            {{-- <iframe width="945" height="590" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe> --}}
+            <iframe height="700px" width="1700px" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe>
           </div>
 
           <h1>Welcome to Our World of Specialty Coffee</h1>

@@ -14,19 +14,20 @@ body {
 }
 
 .container-nav-menu {
-    width: 870px;
+    width: 1090px;
     text-align: center;
     margin: auto;
 }
 
 /*home-section*/
 .navbar-default.navbar-toby.navbar-toby-white {
-  	background: url('../img/nav-bg.png');
+  	background: url('../img/white.jpg');
     width: 100%;
     border: 0;
     border-radius: 0;
     margin: 0;
-    padding: 15px 0 15px;
+    padding: 0 0 0;
+    height: 98px;
 }
 
 .navbar-nav.navbar-navone{
@@ -38,31 +39,35 @@ body {
 .navbar-default.navbar-toby.navbar-toby-white li a:active,
 .navbar-default.navbar-toby.navbar-toby-white li a:hover,
 .navbar-default.navbar-toby.navbar-toby-white li a {
-    color: #fff;
+    color: #9e9e9e;
     font-family: andadaregular;
     text-transform: uppercase;
     font-size: 16px;
     text-decoration: none;
     padding: 5px 15px;
+    letter-spacing: 5px;
 }
 
 .navbar-default.navbar-toby.navbar-toby-white li.active a {
-    border-bottom: 2px solid#fff;
+    /*border-bottom: 2px solid#000;*/
     background: transparent;
-    color: #fff;
+    color: #696969;
 }
 
 .logo-homex {
-    background: url('../img/logo-putih.png');
-    width: 199px;
-    height: 92px;
+    background: url('../img/new-logo1.png');
+    width: 230px;
+    height: 110px;
+    top: 5px;
+    position: relative;
+    z-index: 1;
     display: block;
     background-repeat: no-repeat;
-    margin-right: 50px
+    margin-right: 40px
 }
 
 #youtubecontainer{
-position: absolute; z-index: 0; width:100%; height: 100%; top:122px; left:0;
+position: absolute; z-index: 0; width:100%; height: 100%; top:85px; left:0;
 }
 
 #youtubecontainer iframe{
@@ -75,9 +80,7 @@ width:100%;
 
 .container-homes{
 	width: 100%;
-	height: 815px;
-	/*background-size: cover;*/
-	/*background-image: url('../img/bg-home.jpg');*/
+	height: 770px;
   background-color: #000;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -125,42 +128,7 @@ width:100%;
 	width: 100%;
 	height: 880px;
 	/*background: #fcfcfc;*/
-  background: url('../img/bg-texture.jpg');
-}
-
-.logo-homex-black {
-    background: url('../img/logo-hitam.png');
-    width: 199px;
-    height: 92px;
-    display: block;
-    background-repeat: no-repeat;
-    margin-right: 50px;
-}
-
-.navbar-default.navbar-toby.navbar-toby-black {
-	background: transparent;
-    border: 0;
-    border-radius: 0;
-    margin: 0;
-    padding: 15px 0 0;
-}
-
-.navbar-default.navbar-toby.navbar-toby-black li a:focus,
-.navbar-default.navbar-toby.navbar-toby-black li a:active,
-.navbar-default.navbar-toby.navbar-toby-black li a:hover,
-.navbar-default.navbar-toby.navbar-toby-black li a {
-    color: #000;
-    font-family: andadaregular;
-    text-transform: uppercase;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 5px 15px;
-}
-
-.navbar-default.navbar-toby.navbar-toby-black li.active a {
-    border-bottom: 2px solid#000;
-    background: transparent;
-    color: #000;
+  background: url('../img/grey.jpg');
 }
 
 .col-mdabout-left {
@@ -259,7 +227,7 @@ width:100%;
 .container-gallery {
     width: 100%;
     height: 880px;
-    background: #2f2f2f;
+    background: url('../img/dark-grey.jpg');
     text-align: center;
     margin: auto;
 }
@@ -305,7 +273,7 @@ width:100%;
 .container-find{
 	width: 100%;
   height: 815px;
-  padding-top: 280px;
+  padding-top: 230px;
   background-size: cover;
   background-image: url('../img/bg-findus.png');
   background-repeat: no-repeat;
@@ -412,12 +380,12 @@ width:100%;
 /*FOOTER*/
 footer {
     width: 100%;
-    background: #2f2f2f;
+    background: url('../img/light-grey.jpg');
     padding: 20px 0;
 }
 
 .img-footer {
-    background: url('../img/logo-putih.png');
+    background: url('../img/logo-hitam.png');
     width: 199px;
     height: 92px;
     display: block;
@@ -730,7 +698,7 @@ footer p {
   .container-subscribe {
     width: 100%;
     height: 280px;
-    background: url('../img/bg-texture.jpg');
+    background: url('../img/white.jpg');
     margin: auto;
   }
 
@@ -775,7 +743,7 @@ footer p {
   .container-about{
   	width: 100%;
   	height: auto;
-    background: url('../img/bg-texture.jpg');
+    background: url('../img/grey.jpg');
   }
 
   .col-mdabout-right {
