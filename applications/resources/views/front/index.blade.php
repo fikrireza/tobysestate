@@ -93,7 +93,7 @@
 
         <div class="container">
           <div id="youtubecontainer">
-            <iframe height="700px" width="1700px" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe>
+            <iframe height="760px" width="1001" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe>
           </div>
 
           <h1>Welcome to Our World of Specialty Coffee</h1>

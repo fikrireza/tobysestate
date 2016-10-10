@@ -44,7 +44,6 @@
 
 }
 
-
 @font-face {
   font-family: 'avenir-black';
   src: url('Avenir-Black-webfont.woff') format('woff');
@@ -61,7 +60,7 @@
 
 @font-face {
   font-family: 'din-bold';
-  src: url('din-bold') format('ttf');
+  src: url('din-bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
