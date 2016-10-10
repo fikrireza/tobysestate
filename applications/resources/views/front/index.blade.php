@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Toby's Estate Indonesia</title>
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
 
     <!-- Bootstrap Core CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
@@ -96,7 +96,7 @@
             <iframe height="760px" width="1001" src="https://www.youtube.com/embed/uxef7V7Qa4U?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=uxef7V7Qa4U" frameborder="0" allowfullscreen></iframe>
           </div>
 
-          <h1>Welcome to Our World of Specialty Coffee</h1>
+          <h1>Welcome to Our World <br />of Specialty Coffee</h1>
           <div class="clearfix"></div>
           <a href="#subscribe" class="btn btn-homes page-scroll">subscribe</a>
 

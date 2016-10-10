@@ -98,21 +98,21 @@ body {
 
 .container-homes h1 {
     text-align: center;
-    font-family: andadabold;
+    font-family: andadaregular;
     color: #fff;
     padding: 0px 150px;
-    font-size: 70px;
-    line-height: 85px;
+    font-size: 32px;
+    line-height: 35px;
     margin: 0;
     position: relative;
-    top: 250px;
+    top: 390px;
     text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
 }
 
 .btn.btn-homes {
     text-align: center;
     position: relative;
-    top: 340px;
+    top: 420px;
     margin: auto;
     color: #fff;
     font-family: avenir-light;
@@ -123,6 +123,7 @@ body {
     padding: 4px 28px;
     margin-left: 10px;
 }
+
 .btn.btn-homes:hover {
 	background: #4c4c4c;
 }
