@@ -31,7 +31,7 @@
 <body id="home" class="body-mobile" data-spy="scroll" data-target=".navbar-fixed-top">
 
   <nav class="navbar navbar-default navbar-fixed-top navbar-fixed-top-toby top-nav-collapse" role="navigation">
-    <div class="container">
+    <div class="container container-nav-menu">
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
