@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <title>Toby's Estate Indonesia</title>
+    <meta name="description" content="Welcome to the Toby's Estate Indonesia where you will find everything you need to know about our coffee, tea, chocolate and more!">
+    <meta name="author" content="tobysestatecoffee.co.id">
+
     <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
 
     <!-- Bootstrap Core CSS -->

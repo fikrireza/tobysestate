@@ -341,15 +341,23 @@ body {
 /*CAREER*/
 .container-career{
 	width: 100%;
-  height: 815px;
-  padding-top: 150px;
+  height: 700px;
+  padding-top: 98px;
   background-size: 1600px 850px;
-  background-image: url('../img/bg-career.png');
+  background: #fff;
 }
 
 .logo-career {
   position: relative;
   margin-left: -52px;
+}
+
+.col-md-career {
+  width: 100%;
+  height: 526px;
+  background-size: 1120px 526px;
+  background-image: url('../img/career.png');
+  background-repeat: no-repeat;
 }
 
 .col-md-career ul.square {
