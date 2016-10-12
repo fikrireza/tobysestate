@@ -48,7 +48,7 @@
                 <li><a class="page-scroll" href="#gallery">Gallery</a></li>
                 <li><a class="page-scroll" href="#findus">Location</a></li>
                 <li><a class="page-scroll" href="#">Career</a></li>
-                <li><a class="" href="mailto:tobysestate@normi.co.id">Contact Us</a></li>
+                <li><a class="" href="mailto:contact@tobysestatecoffee.co.id">Contact Us</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -77,7 +77,7 @@
               <li><a class="page-scroll" href="{{ route('index')}}#gallery">Gallery</a></li>
               <li><a class="page-scroll" href="{{ route('index')}}#findus">Location</a></li>
               <li class="active"><a class="page-scroll" href="#career">Career</a></li>
-              <li><a class="" href="mailto:tobysestate@normi.co.id">Contact Us</a></li>
+              <li><a class="" href="mailto:contact@tobysestatecoffee.co.id">Contact Us</a></li>
               </ul>
           </div>
           <!-- /.navbar-collapse -->
