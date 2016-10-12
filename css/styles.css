@@ -288,7 +288,7 @@ body {
 .boxed {
   border: 3px solid white ;
   width: 500px;
-  margin-left: 310px;
+  /*margin-left: 310px;*/
 }
 
 .container-find h1 {
@@ -391,10 +391,87 @@ body {
 
 
 /*FOOTER*/
-footer {
+.footer {
     width: 100%;
     background: url('../img/light-grey.jpg');
     padding: 20px 0;
+}
+
+.container-footer {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.container-footer p {
+    color: #000;
+    text-align: center;
+    font-family: avenir-black;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 0 30px;
+}
+
+.col-md-footer {
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.say-hello {
+  padding-left: 90px;
+  text-align: left;
+}
+
+.say-hello h3 {
+  font-family: DINLight;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.say-hello ul{
+  font-family: DINLight;
+  list-style-type: none;
+  font-size: 14px;
+  color: #000;
+  padding-left:0;
+}
+
+.say-hello ul a{
+  color: #000;
+  padding-left:0;
+}
+
+.social {
+  text-align: center;
+  height: 130px;
+}
+
+.social img {
+  padding: 0px 0px 0px;
+}
+
+.cservice {
+  padding-left: 70px;
+  text-align: left;
+}
+
+.cservice h3 {
+  font-family: DINLight;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.cservice ul{
+  font-family: DINLight;
+  list-style-type: none;
+  font-size: 14px;
+  color: #000;
+  padding-left:0;
+}
+
+.cservice ul a{
+  color: #000;
+  padding-left:0;
 }
 
 .img-footer {
@@ -404,15 +481,6 @@ footer {
     display: block;
     background-repeat: no-repeat;
     margin: 0 auto 25px;
-}
-
-footer p {
-    color: #fff;
-    text-align: center;
-    font-family: avenir-black;
-    text-transform: uppercase;
-    font-size: 10px;
-    padding: 0 10px;
 }
 
 .navbar-fixed-top.navbar-fixed-top-toby{
@@ -735,6 +803,97 @@ footer p {
     padding: 0px 0px;
     margin: 0;
     position: relative;
+  }
+
+  .footer {
+      width: 100%;
+      background: url('../img/light-grey.jpg');
+      padding: 20px 0;
+  }
+
+  .container-footer {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .container-footer p {
+      color: #000;
+      text-align: center;
+      font-family: avenir-black;
+      text-transform: uppercase;
+      font-size: 10px;
+      padding: 0 30px;
+  }
+
+  .col-md-footer {
+    padding-top: 50px;
+    overflow: hidden;
+  }
+
+  .say-hello {
+    padding-left: 35px;
+    text-align: left;
+  }
+
+  .say-hello h3 {
+    font-family: DINLight;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  .say-hello ul{
+    font-family: DINLight;
+    list-style-type: none;
+    font-size: 14px;
+    color: #000;
+    padding-left:0;
+  }
+
+  .say-hello ul a{
+    color: #000;
+    padding-left:0;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .social img {
+    display: none;
+  }
+
+  .cservice {
+    padding-left: 35px;
+    text-align: left;
+  }
+
+  .cservice h3 {
+    font-family: DINLight;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  .cservice ul{
+    font-family: DINLight;
+    list-style-type: none;
+    font-size: 14px;
+    color: #000;
+    padding-left:0;
+  }
+
+  .cservice ul a{
+    color: #000;
+    padding-left:0;
+  }
+
+  .img-footer {
+      background: url('../img/logo-hitam.png');
+      width: 199px;
+      height: 92px;
+      display: block;
+      background-repeat: no-repeat;
+      margin: 0 auto 25px;
   }
 
 }

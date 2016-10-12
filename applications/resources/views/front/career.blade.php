@@ -107,13 +107,47 @@
   </section><!-- home-section -->
   <div class="clearfix"></div>
 
-  <footer>
+  <div class="footer">
 
-    <div class="img-footer"></div>
-    <p>© 2016 Toby's Estate Indonesia</p>
-    <p>all rights reserved</p>
+    <div class="container-fluid container-footer">
+      <div class="container-center">
 
-  </footer>
+        <div class="row">
+          <div class="col-md-4 say-hello">
+            <h3><b>Say Hello</b></h3>
+            <ul>
+              <li><a href="mailto:contact@tobysestatecoffee.co.id">Contact Us</a></li>
+              <li><a href="">Cafe Locations</a></li>
+              <li><a href="">Join Our Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 social">
+            <div class="img-footer"></div>
+            <a href=""><img src="./img/social-fb.png" /></a>
+            <a href="https://www.instagram.com/tobysestateid/"><img src="./img/social-ig.png" /></a>
+          </div>
+
+          <div class="col-md-4 cservice">
+            <h3><b>Customer Service</b></h3>
+            <ul>
+              <li><a href="">Shipping and Returns</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Your Account</a></li>
+              <li><a href="">Wholesale Enquiries</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-md-footer">
+          <p>© 2016 Toby's Estate Indonesia</p>
+          <p>all rights reserved</p>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
 
     <!-- Scrolling Nav JavaScript -->
 
