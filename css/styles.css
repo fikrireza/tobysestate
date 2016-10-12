@@ -132,7 +132,6 @@ body {
 .container-about{
 	width: 100%;
 	height: 880px;
-	/*background: #fcfcfc;*/
   background: url('../img/grey.jpg');
 }
 
@@ -425,13 +424,13 @@ body {
 .say-hello h3 {
   font-family: DINLight;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .say-hello ul{
   font-family: DINLight;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 12px;
   color: #000;
   padding-left:0;
 }
@@ -458,13 +457,13 @@ body {
 .cservice h3 {
   font-family: DINLight;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .cservice ul{
   font-family: DINLight;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 12px;
   color: #000;
   padding-left:0;
 }
@@ -527,8 +526,8 @@ body {
       border: 0;
       border-radius: 0;
       margin: 0;
-      padding: 10px 25px 0px 25px;
-      height: 55px;
+      padding: 10px 20px 0px 20px;
+      height: 145px;
   }
 
   .navbar-nav.navbar-navone{
@@ -558,15 +557,23 @@ body {
     color: #696969;
   }
 
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    text-align: left;
+  }
+
+  .logo-center {
+    text-align: center;
+    margin: 0px;
+  }
+
   .logo-homex-mobile{
-  	background: url('../img/new-logo-mob.png');
-    width: 100px;
-    height: 48px;
-    top: 5px;
-    position: relative;
-    z-index: 1;
-    display: block;
-    background-repeat: no-repeat;
+    padding-left: 40px;
+  }
+
+  .social-head {
+    padding-top: 15px;
+    padding-bottom: 2px;
   }
 
 	.container-homes {
@@ -581,17 +588,19 @@ body {
     display: none;
   }
 
-	.container-about2 {
-    height: auto;
-    padding: 0 0 25px;
-	}
+  .container-about {
+      width: 100%;
+      height: 910px;
+      background: #fcfcfc;
+      background: url('../img/grey.jpg');
+  }
 
 	.container-homes h1 {
     padding: 0px;
     font-size: 30px;
     line-height: normal;
     position: static;
-    margin-top: 55px;
+    margin-top: 180px;
 	}
 
 	.col-mdabout-left h1 {
@@ -605,13 +614,17 @@ body {
 
   .col-md-gallery {
     width: auto;
-    padding-top: 25px;
+    padding-top: 140px;
   }
 
 	.container-gallery {
     height: auto;
     padding: 0 0 25px;
   }
+
+  .col-mdabout-left {
+    margin-top: 170px;
+	}
 
 	.col-mdabout-right {
 	  padding-top: 27px;
@@ -645,13 +658,13 @@ body {
   /*SUBSCRIBE*/
   .container-subscribe {
     width: 100%;
-    height: 280px;
+    height: 400px;
     background: url('../img/bg-texture.jpg');
     margin: auto;
   }
 
   .col-md-subscribe {
-    padding-top: 50px;
+    padding-top: 150px;
     overflow: hidden;
   }
 
@@ -696,20 +709,6 @@ body {
 		display: none;
 	}
 
-	.container-find{
-		height: auto;
-		padding: 140px 0 25px;
-	}
-
-	.container-find h1{
-	    margin-top: 20px;
-	        padding: 0px;
-	    font-size: 30px;
-	    line-height: normal;
-	    position: static;
-	    margin-top: 55px;
-	}
-
 	.logo-homex{
 		margin: 0;
 	}
@@ -738,7 +737,7 @@ body {
 	}
 
 	.container-homes {
-	    height: 270px;
+	    height: 390px;
 	}
 
 	.col-mdmenu ul h4 {
@@ -751,25 +750,25 @@ body {
   }
 
   .container-find{
-    height: 480px;
+    height: 640px;
   }
 
   .boxed {
     border: 3px solid white ;
     width: 100%;
     margin: 0px;
-    padding-top: 15px;
+    /*padding-top: 15px;*/
   }
 
   .container-find h1 {
-      text-align: center;
-      font-family: andadabold;
-      color: #fff;
-      font-size: 38px;
-      margin: 0;
-      position: relative;
-      text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
-      text-transform: uppercase;
+    text-align: center;
+    font-family: andadabold;
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    position: relative;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
   }
 
   .container-find h3 {
@@ -839,13 +838,13 @@ body {
   .say-hello h3 {
     font-family: DINLight;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .say-hello ul{
     font-family: DINLight;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
     padding-left:0;
   }
@@ -871,13 +870,13 @@ body {
   .cservice h3 {
     font-family: DINLight;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .cservice ul{
     font-family: DINLight;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
     padding-left:0;
   }
@@ -900,20 +899,21 @@ body {
 
 @media (max-width: 640px){
 
+  #youtubecontainer {
+    display: none;
+  }
+
   .container-homes {
     height: auto;
     background-size: cover;
     background-image: url('../img/bg-home.jpg');
     background-repeat: no-repeat;
-    padding: 10px 10px 25px;
-  }
-
-  #youtubecontainer {
-    display: none;
+    padding: 80px 10px 25px;
   }
 
 	.container-homes h1 {
- 		 font-size: 25px;
+ 		font-size: 25px;
+    margin-top: 60px;
  	}
 
  	.col-mdabout-left h1 {
@@ -922,19 +922,19 @@ body {
 	}
 
  	.col-mdabout-left {
-    margin-top: 80px;
+    margin-top: 170px;
 	}
 
   /*SUBSCRIBE*/
   .container-subscribe {
     width: 100%;
-    height: 280px;
+    height: 400px;
     background: url('../img/white.jpg');
     margin: auto;
   }
 
   .col-md-subscribe {
-    padding-top: 50px;
+    padding-top: 145px;
     overflow: hidden;
   }
 
@@ -986,6 +986,17 @@ body {
     width: 100%;
     height: 100%;
 	}
+
+  .container-find h1 {
+    text-align: center;
+    font-family: andadabold;
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    position: relative;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+  }
 
   /*CAREER*/
   .container-career{

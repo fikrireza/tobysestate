@@ -40,7 +40,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="logo-homex-mobile"></div>
+            <div class="logo-center">
+              <div class="logo-homex-mobile">
+                <img src="./img/new-logo-mob.png" />
+              </div>
+              <div class="social-head">
+                <a href=""><img src="./img/social-fb.png" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
+                <a href="https://www.instagram.com/tobysestateid/"><img src="./img/social-ig.png" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
+                <a href="mailto:contact@tobysestatecoffee.co.id"><img src="./img/social-email.png" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
+              </div>
+            </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -235,8 +244,9 @@
 
           <div class="col-md-4 social">
             <div class="img-footer"></div>
-            <a href=""><img src="./img/social-fb.png" /></a>
-            <a href="https://www.instagram.com/tobysestateid/"><img src="./img/social-ig.png" /></a>
+            <a href=""><img src="./img/social-fb.png" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
+            <a href="https://www.instagram.com/tobysestateid/"><img src="./img/social-ig.png" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
+            <a href="mailto:contact@tobysestatecoffee.co.id"><img src="./img/social-email.png" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
           </div>
 
           <div class="col-md-4 cservice">
@@ -257,7 +267,7 @@
 
       </div>
     </div>
-    
+
   </div>
 
     <!-- Scrolling Nav JavaScript -->
