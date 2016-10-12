@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use App\Models\User;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Input;
+use Mail;
+use Auth;
 
 class AuthController extends Controller
 {
@@ -23,50 +29,92 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
-    /**
-     * Where to redirect users after login / registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/';
 
-    /**
-     * Create a new authentication controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
     }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
+    public function index()
     {
-        return Validator::make($data, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
-        ]);
+      return view('back.login');
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return User
-     */
-    protected function create(array $data)
+  	/**
+  	 * Handle a login request to the application.
+  	 *
+  	 * @param  App\Http\Requests\LoginRequest  $request
+  	 * @param  Guard  $auth
+  	 * @return Response
+  	 */
+  	public function postLogin(Request $request, Guard $auth)
+  	{
+      $message = [
+        'email.required' => 'Fill This Field',
+        'password.required' => 'Fill This Field'
+      ];
+
+      $validator = Validator::make($request->all(), [
+        'email' => 'required',
+        'password' => 'required|min:8',
+      ], $message);
+
+      if($validator->fails()) {
+        return redirect()->route('index')->withErrors($validator)->withInput();
+      }
+
+  		$logValue = $request->input('email');
+
+  		$logAccess = filter_var($logValue, FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
+
+  		$throttles = in_array(ThrottlesLogins::class, class_uses_recursive(get_class($this)));
+
+  		if ($throttles && $this->hasTooManyLoginAttempts($request))
+  		{
+  			return redirect()->route('index')->with('error', 'You have reached the maximum number of login attempts. Try again in one minute.')->withInput($request->only('email'));
+  		}
+
+  		$credentials = [
+  			$logAccess  => $logValue,
+  			'password'  => $request->input('password')
+  		];
+
+  		if(!$auth->validate($credentials))
+  		{
+  			if ($throttles)
+  			{
+  			  $this->incrementLoginAttempts($request);
+  			}
+  			return redirect()->route('index')->with('error', 'These credentials do not match our records.')->withInput($request->only('email'));
+  		}
+
+  		$user = $auth->getLastAttempted();
+
+  		if($user->flag_active)
+  		{
+  			if ($throttles)
+  			{
+  				$this->clearLoginAttempts($request);
+  			}
+
+  			$auth->login($user, $request->has('memory'));
+  			if($request->session()->has('user_id'))
+  			{
+  				$request->session()->forget('user_id');
+  			}
+
+  			return redirect()->route('dashboard');
+  		}
+
+  		$request->session()->put('user_id', $user->id);
+
+      return redirect()->route('index');
+  	}
+
+    public function getLogout()
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+      session()->flush();
+      Auth::logout();
+      return redirect()->route('index');
     }
 }

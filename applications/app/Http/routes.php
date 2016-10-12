@@ -16,3 +16,8 @@ Route::get('/career', 'WelcomePageController@career')->name('career');
 
 Route::post('/subscribe', 'WelcomePageController@subscribePost')->name('subscribe.Post');
 Route::get('email', 'WelcomePageController@email');
+
+Route::get('/admtbe', 'Auth\AuthController@index')->name('login.index');
+Route::post('login', 'Auth\AuthController@postLogin')->name('login');
+
+Route::get('/admtbe/dashboard', 'DashboardController@index')->name('dashboard');
