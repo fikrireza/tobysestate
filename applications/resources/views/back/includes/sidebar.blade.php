@@ -17,5 +17,10 @@
         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
       </a>
     </li>
+    <li class="{{ Route::currentRouteNamed('subscribe') ? 'active' : ''}}">
+      <a href="{{ url('admtbe/subscribe')}}">
+        <i class="fa fa-envelope"></i> <span>Subscribe</span>
+      </a>
+    </li>
   </ul>
 </section>

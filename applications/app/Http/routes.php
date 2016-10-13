@@ -21,3 +21,7 @@ Route::get('/admtbe', 'Auth\AuthController@index')->name('login.index');
 Route::post('login', 'Auth\AuthController@postLogin')->name('login');
 
 Route::get('/admtbe/dashboard', 'DashboardController@index')->name('dashboard');
+
+
+Route::get('/admtbe/subscribe', 'SubscribeController@index')->name('subscribe');
+Route::get('/admtbe/subscribe/export/{type}', 'SubscribeController@export');
