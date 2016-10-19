@@ -39,17 +39,27 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="{{ url('/admtbe/subscribe/export/xlsx') }}">Excel</a></li>
                 <li><a href="{{ url('/admtbe/subscribe/export/csv')}}">CSV</a></li>
-                <li><a href="{{ url('/admtbe/subscribe/export/pdf')}}">PDF</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="box-body table-responsive">
-          <table class="table table-bordered">
+          <table  class="table table-bordered">
+            <thead>
             <tr class="bg-black">
+              <th>No</th>
               <th>Name</th>
               <th>Address</th>
             </tr>
+            </thead>
+            @php
+              $pageget;
+              if($subscribes->currentPage()==1)
+                $pageget = 1;
+              else
+                $pageget = (($subscribes->currentPage() - 1) * $subscribes->perPage())+1;
+            @endphp
+            <tbody>
             @if($subscribes->isEmpty())
               <tr>
                 <td colspan="8" align="center">Empty Data</td>
@@ -57,14 +67,22 @@
             @else
               @foreach($subscribes as $key)
               <tr>
+                <td>{{$pageget}}</td>
                 <td>{{ $key->name  }}</td>
                 <td>{!! $key->email  !!}</td>
               </tr>
+              @php
+                $pageget++;
+              @endphp
               @endforeach
             @endif
+            </tbody>
           </table>
         </div>
         <div class="box-footer">
+          <div class="pull-left">
+            Total Record : <b>{{ $subscribes->total() }}</b> Subscribers
+          </div>
           <div class="pagination pagination-sm no-margin pull-right">
             {{ $subscribes->links() }}
           </div>
@@ -76,6 +94,5 @@
 @stop
 
 @section('script')
-
 
 @endsection

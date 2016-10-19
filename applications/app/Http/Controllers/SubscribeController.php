@@ -18,7 +18,7 @@ class SubscribeController extends Controller
 
     public function index() {
 
-      $subscribes   = Subscribe::paginate(10);
+      $subscribes   = Subscribe::paginate(20);
 
       return view('back.pages.subscribe.index', compact('subscribes'));
     }
