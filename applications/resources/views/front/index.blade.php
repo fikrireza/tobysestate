@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Toby's Estate Indonesia</title>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toby&#039;s Estate Indonesia | Specialty Coffee Roasters | Online Coffee |</title>
     <meta name="google-site-verification" content="Nh4YlU54424bnwr7LXglUypRD8uldfvXa5btnnAgs9I" />
-    <meta name="description" content="Welcome to the Toby's Estate Indonesia where you will find everything you need to know about our coffee, tea, chocolate and more!">
-    <meta name="keywords" content="Toby's Estate Indonesia, coffee, tobys, estate, coffee indonesia, tobysestate, Tobys Estate Indonesia"/>
-    <meta http-equiv="Content-Language" content="id" />
+    <meta name="description" content="Welcome to Toby's Estate Coffee Indonesia, the home of specialty and high quality coffee.">
+    <meta name="keywords" content="Toby's Estate Indonesia, coffee, tobys, estate, coffee indonesia, tobysestate, Tobys Estate Coffee Indonesia, kopi, kopi indonesia, kopi tobys, tobys estate kopi"/>
+    <meta http-equiv="Content-Language" content="en-US" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="all" />
 
     <meta name="author" content="tobysestatecoffee.co.id">
 
-    <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('img/icon.png') }}"/>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./fonts/fonts.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('fonts/fonts.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+
+    <meta name="description" content="Welcome to Toby&#039;s Estate Coffee Indonesia, the home of specialty and high quality coffee."/>
+    <meta name="robots" content="noodp"/>
+    <link rel="canonical" href="http://www.tobysestatecoffee.co.id/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Toby&#039;s Estate Speciality Coffee Roasters Indonesia" />
+    <meta property="og:description" content="Welcome to Toby&#039;s Estate Coffee Indonesia, the home of specialty and high quality coffee. Learn more about our coffee beans, barista training and coffee equipment." />
+    <meta property="og:url" content="http://www.tobysestatecoffee.co.id/" />
+    <meta property="og:site_name" content="Toby&#039;s Estate Coffee | Specialty Coffee Roasters | Online Coffee" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Welcome to Toby&#039;s Estate Coffee Indonesia, the home of specialty and high quality coffee." />
+    <meta name="twitter:title" content="Toby&#039;s Estate Coffee Indonesia" />
+
+    <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/www.tobysestatecoffee.co.id\/","name":"Toby&#039;s Estate Coffee Indonesia | Specialty Coffee Roasters | Online Coffee","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.tobysestatecoffee.co.id\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
 
     @if(Session::has('message'))
     <script>alert('{{ Session::get('message')}}');</script>
@@ -33,8 +46,8 @@
 
       ga('create', 'UA-85998402-1', 'auto');
       ga('send', 'pageview');
-
     </script>
+
     <!-- Custom CSS -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +56,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head>
+  </head>
 
 <body id="home" class="body-mobile" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -58,12 +71,12 @@
             </button>
             <div class="logo-center">
               <div class="logo-homex-mobile">
-                <img src="./img/new-logo-mob.png" />
+                <img src="{{ asset('img/new-logo-mob.png') }}" />
               </div>
               <div class="social-head">
-                <a href=""><img src="./img/social-fb.png" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
-                <a href="https://www.instagram.com/tobysestateid/"><img src="./img/social-ig.png" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
-                <a href="mailto:contact@tobysestatecoffee.co.id"><img src="./img/social-email.png" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
+                <a href="https://www.facebook.com/tobysestateid"><img src="{{ asset('img/social-fb.png') }}" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
+                <a href="https://www.instagram.com/tobysestateid/"><img src="{{ asset('img/social-ig.png') }}" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
+                <a href="mailto:contact@tobysestatecoffee.co.id"><img src="{{ asset('img/social-email.png') }}" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
               </div>
             </div>
         </div>
@@ -149,9 +162,9 @@
          </div>
 
          <div class="col-md-6 col-mdabout-right">
-            <img src="./img/about-1.png">
+            <img src="{{ asset('img/about-1.png') }}">
 
-            <img src="./img/about-2.png">
+            <img src="{{ asset('img/about-2.png') }}">
          </div>
 
         </div>
@@ -234,7 +247,7 @@
           <h4>PIK AVENUE GF #E2, NORTH JAKARTA</h4>
           <h4>GUNAWARMAN #51, SOUTH JAKARTA</h4>
           <br />
-          <a href="https://www.instagram.com/tobysestateid/" target="_blank"><img src="img/ig.png" /></a>
+          <a href="https://www.instagram.com/tobysestateid/" target="_blank"><img src="{{ asset('img/ig.png') }}" /></a>
         </div>
 
         </div>
@@ -253,25 +266,25 @@
             <h3><b>Say Hello</b></h3>
             <ul>
               <li><a href="mailto:contact@tobysestatecoffee.co.id">Contact Us</a></li>
-              <li><a href="">Cafe Locations</a></li>
-              <li><a href="">Join Our Team</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/#findus">Cafe Locations</a></li>
+              <li><a href="mailto:contact@tobysestatecoffee.co.id">Join Our Team</a></li>
             </ul>
           </div>
 
           <div class="col-md-4 social">
             <div class="img-footer"></div>
-            <a href=""><img src="./img/social-fb.png" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
-            <a href="https://www.instagram.com/tobysestateid/"><img src="./img/social-ig.png" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
-            <a href="mailto:contact@tobysestatecoffee.co.id"><img src="./img/social-email.png" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
+            <a href="https://www.facebook.com/tobysestateid"><img src="{{ asset('img/social-fb.png') }}" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
+            <a href="https://www.instagram.com/tobysestateid/"><img src="{{ asset('img/social-ig.png') }}" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
+            <a href="mailto:contact@tobysestatecoffee.co.id"><img src="{{ asset('img/social-email.png') }}" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
           </div>
 
           <div class="col-md-4 cservice">
             <h3><b>Customer Service</b></h3>
             <ul>
-              <li><a href="">Shipping and Returns</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Your Account</a></li>
-              <li><a href="">Wholesale Enquiries</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/">Shipping and Returns</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/">Privacy Policy</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/">Your Account</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/">Wholesale Enquiries</a></li>
             </ul>
           </div>
         </div>
@@ -289,10 +302,10 @@
     <!-- Scrolling Nav JavaScript -->
 
     <!-- jQuery -->
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery.easing.min.js"></script>
-    <script src="./js/scrolling-nav.js"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('js/scrolling-nav.js') }}"></script>
     <script type="text/javascript">
     @if (count($errors) > 0)
       $('#subscribe').section('show');

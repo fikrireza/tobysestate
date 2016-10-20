@@ -14,10 +14,9 @@
 
   <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="./css/bootstrap.css" rel="stylesheet">
-  <link href="./fonts/fonts.css" rel="stylesheet">
-  <link href="./css/styles.css" rel="stylesheet">
+  <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+  <link href="{{ asset('fonts/fonts.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -55,9 +54,9 @@
                 <img src="./img/new-logo-mob.png" />
               </div>
               <div class="social-head">
-                <a href=""><img src="./img/social-fb.png" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
-                <a href="https://www.instagram.com/tobysestateid/"><img src="./img/social-ig.png" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
-                <a href="mailto:contact@tobysestatecoffee.co.id"><img src="./img/social-email.png" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
+                <a href="https://www.facebook.com/tobysestateid"><img src="{{ asset('img/social-fb.png') }}" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
+                <a href="https://www.instagram.com/tobysestateid/"><img src="{{ asset('img/social-ig.png') }}" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
+                <a href="mailto:contact@tobysestatecoffee.co.id"><img src="{{ asset('img/social-email.png') }}" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
               </div>
             </div>
         </div>
@@ -139,25 +138,25 @@
             <h3><b>Say Hello</b></h3>
             <ul>
               <li><a href="mailto:contact@tobysestatecoffee.co.id">Contact Us</a></li>
-              <li><a href="">Cafe Locations</a></li>
-              <li><a href="">Join Our Team</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/#findus">Cafe Locations</a></li>
+              <li><a href="mailto:contact@tobysestatecoffee.co.id">Join Our Team</a></li>
             </ul>
           </div>
 
           <div class="col-md-4 social">
             <div class="img-footer"></div>
-            <a href=""><img src="./img/social-fb.png" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
-            <a href="https://www.instagram.com/tobysestateid/"><img src="./img/social-ig.png" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
-            <a href="mailto:contact@tobysestatecoffee.co.id"><img src="./img/social-email.png" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
+            <a href="https://www.facebook.com/tobysestateid"><img src="{{ asset('img/social-fb.png') }}" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
+            <a href="https://www.instagram.com/tobysestateid/"><img src="{{ asset('img/social-ig.png') }}" onmouseover="this.src='./img/social-ig-a.png'" onmouseout="this.src='./img/social-ig.png'"/></a>
+            <a href="mailto:contact@tobysestatecoffee.co.id"><img src="{{ asset('img/social-email.png') }}" onmouseover="this.src='./img/social-email-a.png'" onmouseout="this.src='./img/social-email.png'"/></a>
           </div>
 
           <div class="col-md-4 cservice">
             <h3><b>Customer Service</b></h3>
             <ul>
-              <li><a href="">Shipping and Returns</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Your Account</a></li>
-              <li><a href="">Wholesale Enquiries</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/">Shipping and Returns</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/">Privacy Policy</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/">Your Account</a></li>
+              <li><a href="http://www.tobysestatecoffee.co.id/">Wholesale Enquiries</a></li>
             </ul>
           </div>
         </div>
@@ -172,13 +171,10 @@
 
   </div>
 
-    <!-- Scrolling Nav JavaScript -->
-
-    <!-- jQuery -->
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery.easing.min.js"></script>
-    <script src="./js/scrolling-nav.js"></script>
+  <script src="{{ asset('js/jquery.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+  <script src="{{ asset('js/scrolling-nav.js') }}"></script>
 
 </body>
 
