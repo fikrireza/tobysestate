@@ -111,17 +111,32 @@
     <div class="container-fluid container-career">
       <div class="container">
 
-        <div class="col-md-12 col-md-career">
-          {{-- <img src="{{ asset('img/logo-career.png') }}" class="logo-career" />
-          <ul class="square">
-            <li>Brand, Marketing, and Promotion Manager <a href="" class="btn btn-apply">Submit</a></li>
-            <li>Executive Chef <a href="" class="btn btn-apply">Submit</a></li>
-            <li>Operational Manager <a href="" class="btn btn-apply">Submit</a></li>
-            <li>Sales and Distribution Manager <a href="" class="btn btn-apply">Submit</a></li>
-            <li>Restaurant/Cafe/Outlet Manager <a href="" class="btn btn-apply">Submit</a></li>
-            <li>Graphic Designer and Social Media Manager <a href="" class="btn btn-apply">Submit</a></li>
-          </ul> --}}
+        <div class="col-md-6 col-mdcareer-left">
+          <img src="{{ asset('img/career-img-left.png') }}">
         </div>
+
+        <div class="col-md-6 col-mdcareer-right">
+          <img src="{{ asset('img/logo-hitam.png') }}" width="154px" height="71px"/>
+
+          <h1>we’re hiring !</h1>
+          <span></span>
+
+          <h4>positions available</h4>
+
+          <h3><a href="http://www.jobstreet.co.id/id/job/1978345/sources/1/origin/id" target="_blank" class="listjob">Executive Chef</a></h3>
+          <h3><a href="http://www.jobstreet.co.id/id/job/1976572/sources/1/origin/id" target="_blank" class="listjob">Operational Manager</a></h3>
+          <h3><a href="http://www.jobstreet.co.id/id/job/1977526/sources/1/origin/id" target="_blank" class="listjob">Sales and Distribution Manager</a></h3>
+          <h3><a href="http://www.jobstreet.co.id/id/job/1976577/sources/1/origin/id" target="_blank" class="listjob">Restaurant/Cafe/Outlet Manager</a></h3>
+          <h3><a href="http://www.jobstreet.co.id/id/job/1977543/sources/1/origin/id" target="_blank" class="listjob">Graphic Designer and Social Media Manager</a></h3>
+          <h3><a href="http://www.jobstreet.co.id/id/job/1976580/sources/1/origin/id" target="_blank" class="listjob">Brand, Marketing, and Promotion Manager</a></h3>
+
+          <br />
+          <span></span>
+
+          <h2>Send your CV to <a href="mailto:tobysestate@normi.co.id" class="sendcv">tobysestate@normi.co.id</a></h2>
+
+        </div>
+
       </div>
     </div>
 

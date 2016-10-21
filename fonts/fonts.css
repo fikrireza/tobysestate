@@ -8,7 +8,7 @@
 
 }
 
-@font-face {
+/*@font-face {
     font-family: 'andadabold_italic';
     src: url('andada-bolditalic-webfont.woff2') format('woff2'),
          url('andada-bolditalic-webfont.woff') format('woff');
@@ -24,7 +24,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
 @font-face {
     font-family: 'andadaregular';
@@ -37,7 +37,7 @@
 
 @font-face {
   font-family: 'helveticaneue';
-  src: url('helvetica-neue.ttf') format('ttf'),
+  src: url('helvetica-neue.ttf') format('truetype'),
        url('helvetica-neue.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -70,4 +70,32 @@
   src: url('DINLight.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'akkurat-bold';
+  src: url('Akkurat-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'akkurat-italic';
+  src: url('Akkurat-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'akkurat-reqular';
+  src: url('Akkurat-Reqular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hoefler-italic';
+  src: url('Hoefler-Text-Italic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
