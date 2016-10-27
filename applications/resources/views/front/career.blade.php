@@ -51,7 +51,7 @@
             </button>
             <div class="logo-center">
               <div class="logo-homex-mobile">
-                <img src="./img/new-logo-mob.png" />
+                <a href="{{ route('index') }}"><img src="{{ asset('img/new-logo-mob.png') }}" alt="Toby's Estate Indonesia" /></a>
               </div>
               <div class="social-head">
                 <a href="https://www.facebook.com/tobysestateid"><img src="{{ asset('img/social-fb.png') }}" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
@@ -87,7 +87,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <div class="logo-homex"></div>
+              <a href="{{ route('index')}}"><div class="logo-homex"></div></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -112,11 +112,11 @@
       <div class="container">
 
         <div class="col-md-6 col-mdcareer-left">
-          <img src="{{ asset('img/career-img-left.png') }}">
+          <img src="{{ asset('img/career-img-left.png') }}" alt="Toby's Estate Indonesia">
         </div>
 
         <div class="col-md-6 col-mdcareer-right">
-          <img src="{{ asset('img/logo-hitam.png') }}" width="154px" height="71px"/>
+          <img src="{{ asset('img/logo-hitam.png') }}" width="154px" height="71px" alt="Toby's Estate Indonesia"/>
 
           <h1>we’re hiring !</h1>
           <span></span>

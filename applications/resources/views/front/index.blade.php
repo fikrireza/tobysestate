@@ -71,7 +71,7 @@
             </button>
             <div class="logo-center">
               <div class="logo-homex-mobile">
-                <img src="{{ asset('img/new-logo-mob.png') }}" />
+                <a href="{{ route('index') }}"><img src="{{ asset('img/new-logo-mob.png') }}" alt="Toby's Estate Indonesia" /></a>
               </div>
               <div class="social-head">
                 <a href="https://www.facebook.com/tobysestateid"><img src="{{ asset('img/social-fb.png') }}" onmouseover="this.src='./img/social-fb-a.png'" onmouseout="this.src='./img/social-fb.png'" /></a>
@@ -107,7 +107,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <div class="logo-homex"></div>
+              <a href="{{ route('index')}}"><div class="logo-homex"></div></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -162,9 +162,9 @@
          </div>
 
          <div class="col-md-6 col-mdabout-right">
-            <img src="{{ asset('img/about-1.png') }}">
+            <img src="{{ asset('img/about-1.png') }}" alt="Toby's Estate Indonesia">
 
-            <img src="{{ asset('img/about-2.png') }}">
+            <img src="{{ asset('img/about-2.png') }}" alt="Toby's Estate Indonesia">
          </div>
 
         </div>
@@ -247,7 +247,7 @@
           <h4>PIK AVENUE GF #E2, NORTH JAKARTA</h4>
           <h4>GUNAWARMAN #51, SOUTH JAKARTA</h4>
           <br />
-          <a href="https://www.instagram.com/tobysestateid/" target="_blank"><img src="{{ asset('img/ig.png') }}" /></a>
+          <a href="https://www.instagram.com/tobysestateid/" target="_blank"><img src="{{ asset('img/ig.png') }}" alt="Toby's Estate Indonesia"/></a>
         </div>
 
         </div>
