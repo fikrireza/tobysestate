@@ -18,6 +18,8 @@
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('fonts/fonts.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/countdown/countdown.css')}}" rel="stylesheet" />
+    <link href="{{ asset('plugins/countdown/flipclock.css')}}" rel="stylesheet" />
 
     <meta name="description" content="Welcome to Toby&#039;s Estate Coffee Indonesia, the home of specialty and high quality coffee."/>
     <meta name="robots" content="noodp"/>
@@ -125,6 +127,19 @@
       </div>
   </nav>
   <!-- Navigation -->
+
+  <?php $now = strtotime('now'); $limit = '1481385600'; $start = '1480579200';?>
+  @if (($now >= $start ) && ($now <= $limit))
+  <div id="boxes">
+    <div id="dialog" class="window">
+      <p style="font-family:din-bold;font-size:34px;line-height:60px;">Roasting & Brewing Soon!!</p>
+      <div class="clock" style="margin:2em;"></div>
+      <p style="font-family:din-bold;font-size:20px"><a href="#subscribe">Join our mailing list for a chance to get FREE coffee for one month!</a></p>
+      <p style="font-family:din-bold;font-size:20px;">PIK AVENUE GF #E2, North Jakarta</p>
+    </div>
+    <div id="mask"></div>
+  </div>
+  @endif
 
 	<section id="home" class="home-section">
 
@@ -240,7 +255,7 @@
         <div class="boxed container-center">
           <h1>brewing soon</h1>
         </div>
-          <h3>october 2016</h3>
+          <h3>december 2016</h3>
         <div class="clearfix"></div>
 
         <div class="container-find-address">
@@ -306,6 +321,28 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('js/scrolling-nav.js') }}"></script>
+    <script src="{{ asset('plugins/countdown/countdown.js')}}"></script>
+    <script src="{{ asset('plugins/countdown/flipclock.js')}}"></script>
+    <script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+
+				// Grab the current date
+				var currentDate = new Date();
+
+        // new Date(year, month, day, hour, minute, second, millisecond);
+        var futureDate = new Date(2016, 11, 10, 16, 0, 0);
+				// Calculate the difference in seconds between the future and current date
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+			});
+		</script>
     <script type="text/javascript">
     @if (count($errors) > 0)
       $('#subscribe').section('show');

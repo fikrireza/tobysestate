@@ -1,0 +1,49 @@
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none;
+}
+
+#boxes .window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 200px;
+  display: none;
+  z-index: 9999;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#boxes #dialog {
+  width: 680px;
+  height: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI Light', sans-serif;
+  font-size: 15pt;
+}
+
+@media (max-width: 640px){
+  #boxes {
+    display: none;
+  }
+  .window {
+    display: none;
+  }
+  #mask {
+    display: none;
+  }
+  #boxes #dialog {
+    display: none;
+  }
+  .clock{
+    display: none;
+  }
+
+}
